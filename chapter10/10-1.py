@@ -5,6 +5,7 @@ with open(filename) as file_object:
     print(contents)
 
 print("---")
+# 第二次打印要重新打开文件，因为上一次已经读到文件的最后了
 # 第二次打印遍历文件对象
 with open(filename) as file_object:
     for line in file_object:

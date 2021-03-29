@@ -1,0 +1,5 @@
+filename = "guest.txt"
+name = input("Please enter you name: ")
+
+with open(filename, 'w') as file_object:
+    file_object.write(name)
