@@ -9,7 +9,7 @@ def word_count(filename, word):
         for line in lines:
             line_list += line
         count = line_list.lower().count(word)
-        print("The number of word '" + word + "' in file " + filename + " is " + str(count))
+        print("The number of word '" + word + "' in the file " + filename + " is " + str(count))
 
 
 filenames = ['alice.txt', 'siddhartha.txt', 'moby_dick.txt', 'little_women.txt']
