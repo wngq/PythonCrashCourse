@@ -1,7 +1,7 @@
 def word_count(filename, word):
     try:
         with open(filename) as file_object:
-            contents = file_object.read()  # read()返回的是bytes
+            contents = file_object.read()  # read()返回的是bytes <class 'str'>
     except FileNotFoundError:
         print("Sorry, the file " + filename + " does not exist! ")
     else:
