@@ -5,7 +5,6 @@ from ship import Ship
 import game_functions as gf
 
 
-
 def run_game():
     # 初始化pygame、设置和屏幕对象
     pygame.init()
@@ -22,7 +21,8 @@ def run_game():
     while True:
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        bullets.update()
+        gf.update_bullets(bullets)
+
         gf.update_screen(ai_settings, screen, ship, bullets)
 
 
