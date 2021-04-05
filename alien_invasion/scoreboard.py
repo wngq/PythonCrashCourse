@@ -23,7 +23,7 @@ class Scoreboard():
     def prep_score(self):
         """将得分转换为一副渲染的图像"""
         round_score = int(round(self.stats.score, -1))
-        score_str = "{:,}".format(round_score)
+        score_str = "Score: {:,}".format(round_score)
         self.score_image = self.font.render(score_str, True,
                                             self.text_color, self.ai_settings.bg_color)
 
@@ -35,7 +35,7 @@ class Scoreboard():
     def prep_high_score(self):
         """将最高得分转换为渲染的图像"""
         high_score = int(round(self.stats.high_score, -1))
-        high_score_str = "{:,}".format(high_score)
+        high_score_str = "High Score: {:,}".format(high_score)
         self.hige_score_image = self.font.render(high_score_str, True,
                                                  self.text_color, self.ai_settings.bg_color)
 
@@ -52,7 +52,7 @@ class Scoreboard():
 
     def prep_level(self):
         """将等级转换为渲染的图像"""
-        self.level_image = self.font.render(str(self.stats.level), True, self.text_color, self.ai_settings.bg_color)
+        self.level_image = self.font.render("Level: "+str(self.stats.level), True, self.text_color, self.ai_settings.bg_color)
 
         # 将等级放在得分下面
         self.level_rect = self.level_image.get_rect()
