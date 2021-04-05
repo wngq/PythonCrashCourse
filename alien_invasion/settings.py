@@ -1,5 +1,5 @@
 class Settings():
-    """存储《外星人入侵》的所有设置的类"""
+    """存储《外星人入侵》的所有设置的类"""  # 开发结束后，15 bullet_width和34 alien_speed_factor要还原
 
     def __init__(self):
         """初始化游戏的设置"""
