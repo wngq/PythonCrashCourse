@@ -35,7 +35,7 @@ filename_2 = 'death_valley_2014.csv'
 get_weather_data(filename_2, dates_2, highs_2, lows_2)
 plt.plot(dates_2, highs_2, c='red', alpha=0.5)
 plt.plot(dates_2, lows_2, c='green', alpha=0.5)
-plt.fill_between(dates_2, highs_2, lows_2, facecolor='green', alpha=0.3)
+plt.fill_between(dates_2, highs_2, lows_2, facecolor='green', alpha=0.1)
 
 # 设置图像格式
 plt.title("Daily high and low temperature - 2014\nDeath Vally and Stika", fontsize=24)
