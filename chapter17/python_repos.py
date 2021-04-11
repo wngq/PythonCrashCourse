@@ -28,7 +28,7 @@ for repo_dict in repo_dicts:
             'label': repo_dict['description'],
             'xlink': repo_dict['html_url'],
         }
-    else:
+    else:  # 有的repo_dict的description键是空值
         plot_dict = {
             'value': repo_dict['stargazers_count'],
             'label': '-No Description',
